@@ -43,3 +43,65 @@ All configs are [JSON](https://en.wikipedia.org/wiki/JSON) formatted and follow 
   ]
 }
 ```
+
+### Elements
+
+Provides a new configuration which holds all data about the voice command.
+
+#### Phrase
+
+Which phrase to be linked with the command. Multiple commands can share phrases which creates a chain of executions.
+This must be pronounceable in any language and is combined with any parent group phrases (to create a "sentence").
+
+#### Action
+
+This decides which action to be made at execution time, the currently available actions are:
+
+> #### Say 
+> Say something to audio output.
+>
+> ActionData: `text`, `text`, `...`.
+
+> #### SayRandom 
+> Say one of a set of random strings.
+>
+> ActionData: `text`, `text`, `...`.
+
+> #### OpenFile
+> Opens a file on the local system.
+>
+> ActionData: `Filepath`.
+
+> #### Shell
+> Runs a shellcommand as if it was runned from the terminal.
+>
+> ActionData: `command`, `command`, `...`.
+
+> #### PowerShell
+> Runs a powershell command as if it was runned from the terminal.
+>
+> ActionData: `command`, `command`, `...`.
+
+> #### SayCode 
+> Say evaluated C# code result to audio output.
+>
+> ActionData: `expression`.
+
+> #### Code
+> Evaluates and runs C# code.
+>
+> ActionData: `code line`, `code line`, `...`.
+
+> #### CodeFileCS
+> Evaluates and runs a .cs C# project file.
+>
+> ActionData: `source file`.
+
+
+#### ActionData
+
+This is essentially the arguments used by the action. Often the **First** argument is most important to provide.
+
+### Groups
+
+Holds child elements and/or groups, together with any phrases (can be left out).
