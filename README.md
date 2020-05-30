@@ -36,7 +36,7 @@ All configs are [JSON](https://en.wikipedia.org/wiki/JSON) formatted and follow 
   ],
   "Groups": [
     "Phrase": "#Group phrase#",
-    "Elements": [ ... ],
-    "Groups": [ ... ]
+    "Elements": [ "# ... #" ],
+    "Groups": [ "# ... #" ]
   ]
 ```
