@@ -17,7 +17,8 @@ When you start the program, you are first prompted to select a voice synthesizer
 
 ## Configs
 
-All configs are [JSON](https://en.wikipedia.org/wiki/JSON) formatted and follow the structure below:
+The configurations is located in the `C:\Users\[USERNAME]\AppData\Roaming\VoiceCommander\Configs` folder.
+All config files are [JSON](https://en.wikipedia.org/wiki/JSON) formatted and follow the structure below:
 
 ```json
 {
@@ -94,6 +95,7 @@ This decides which action to be made at execution time, the currently available 
 
 > #### CodeFileCS
 > Evaluates and runs a .cs C# project file.
+> File **can** be located in the config folder and referenced using just the file name or relative file paths from there.
 >
 > ActionData: `source file`.
 
