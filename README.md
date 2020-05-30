@@ -21,8 +21,8 @@ All configs are [JSON](https://en.wikipedia.org/wiki/JSON) formatted and follow 
 
 ```json
 {
-  "Name": "Example Config",
-  "Description": "Example configuration created 2020 by William.",
+  "Name": "Example #Title#",
+  "Description": "Example configuration created 2020 by #Name#.",
   "Elements": [
     {
       "Phrase": "#Phrase#",
