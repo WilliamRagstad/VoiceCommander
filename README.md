@@ -21,24 +21,25 @@ All configs are [JSON](https://en.wikipedia.org/wiki/JSON) formatted and follow 
 
 ```json
 {
-  "Name": "Example #Title#",
-  "Description": "Example configuration created 2020 by #Name#.",
+  "Name": "Example Title",
+  "Description": "Example configuration created 2020 by John.",
   "Elements": [
     {
-      "Phrase": "#Phrase#",
-      "Action": "#Action#",
+      "Phrase": "Phrase",
+      "Action": "Action",
       "ActionData": [
-        "#Arg1#",
-        "#Arg2#",
-        "#...#"
+        "Arg1",
+        "Arg2",
+        "..."
       ]
     }
   ],
   "Groups": [
     {
-      "Phrase": "#Group phrase#",
-      "Elements": [ "# ... #" ],
-      "Groups": [ "# ... #" ]
+      "Phrase": "Group phrase",
+      "Elements": [ ],
+      "Groups": [ ]
     }
   ]
+}
 ```
